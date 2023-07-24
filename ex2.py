@@ -6,8 +6,16 @@
 # как ставка умноженная на процент премии
 
 
+# link ='C:\Thecode\Media\статья.txt'
+# p, s = link.split('.',1)
+# print(p)
+# print(s)
 link ='C:\Thecode\Media\статья.txt'
-p, s = link.split('.',1)
-print(p)
-print(s)
+a, _, c  = link.rpartition('\\')
+print(a)
+print(c)
 
+a = 'Первый - второй - третий'
+# Разбиваем строку по самому правому ' - ', берем левую часть
+b = a.rpartition(' - ')
+print(b)  # Первый - второй
