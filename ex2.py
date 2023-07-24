@@ -13,5 +13,4 @@ pays = [10000, 15000, 20000]
 persents = ['50.25%', '20%', '30.6%']
 # pprint(grants_dict(names, pays, persents))
 
-my_dictcomp = {i: j*k for (i, j, k) in zip(names, pays, map(lambda x: float(x[:-1])/100, persents)) }
-pprint(my_dictcomp)
+pprint({i: j*k for (i, j, k) in zip(names, pays, map(lambda x: float(x[:-1])/100, persents))}, width=1)
